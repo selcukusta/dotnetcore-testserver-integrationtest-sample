@@ -17,9 +17,9 @@ namespace app.tests.integration
     {
         private readonly HttpClient _client;
 
-        public PeopleControllerTestFixture(ClientFixture hede)
+        public PeopleControllerTestFixture(ClientFixture _clientFixture)
         {
-            _client = hede.Client;
+            _client = _clientFixture.Client;
         }
 
         [Fact, TestOrder(2)]
